@@ -33,7 +33,7 @@ namespace rtk
 template <class TInputImage, class TOutputImage>
 void
 RayBoxIntersectionImageFilter<TInputImage,TOutputImage>
-::SetBoxFromImage(const ImageBaseType *_arg, bool bWithExternalHalfPixelBorder )
+::SetBoxFromImage(const ImageBaseType *_arg, bool /*bWithExternalHalfPixelBorder*/ )
 {
   m_RBIFunctor->SetBoxFromImage(_arg);
   this->Modified();
