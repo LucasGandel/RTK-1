@@ -30,7 +30,7 @@ namespace rtk
 /** \class ProjectGeometricPhantomImageFilter
  * \brief Analytical projection a GeometricPhantom
  *
- * \test rtkprojectgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkProjectGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

@@ -32,7 +32,7 @@ namespace rtk
  * correction algorithm in between. The first part only set values to have max
  * value in air.
  *
- * \test rtkelektatest.cxx
+ * \test rtkElektaTest.cxx
  *
  * \author Simon Rit
  *

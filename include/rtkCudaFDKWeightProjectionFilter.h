@@ -39,8 +39,8 @@ namespace rtk
  *
  * \see rtk::FDKWeightProjectionFilter
  *
- * \test rtkfdktest.cxx, rtkrampfiltertest.cxx, rtkdisplaceddetectortest.cxx,
- * rtkshortscantest.cxx, rtkfdkprojweightcompcudatest.cxx
+ * \test rtkfdktest.cxx, rtkRampFilterTest.cxx, rtkdisplaceddetectortest.cxx,
+ * rtkShortScanTest.cxx, rtkfdkprojweightcompcudatest.cxx
  *
  * \author peter
  *

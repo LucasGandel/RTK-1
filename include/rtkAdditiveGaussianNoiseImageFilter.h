@@ -161,7 +161,7 @@ private:
  * where G() is the Gaussian generator and d is the seed.  A particular seed
  * can be specified in order to perform repeatable tests.
  *
- * \test rtkrampfiltertest.cxx
+ * \test rtkRampFilterTest.cxx
  *
  * \author Gavin Baker: gavinb at cs_mu_oz_au
  *

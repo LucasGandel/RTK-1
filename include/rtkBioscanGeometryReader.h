@@ -42,7 +42,7 @@ namespace rtk
  *
  * Creates a 3D circular geometry from a Bioscan NanoSPECT/CT.
  *
- * \test rtkbioscantest
+ * \test rtkBioscanTest
  *
  * \author Simon Rit
  *

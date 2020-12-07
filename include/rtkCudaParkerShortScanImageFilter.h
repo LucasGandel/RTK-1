@@ -39,7 +39,7 @@ namespace rtk
  *
  * \see rtk::ParkerShortScanImageFilter
  *
- * \test rtkshortscantest.cxx, rtkshortscancompcudatest.cxx
+ * \test rtkShortScanTest.cxx, rtkShortScanCompCudaTest.cxx
  *
  * \author peter
  *

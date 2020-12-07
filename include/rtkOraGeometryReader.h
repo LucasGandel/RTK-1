@@ -30,7 +30,7 @@ namespace rtk
  *
  * Creates a 3D circular geometry from an ora (medPhoton) dataset.
  *
- * \test rtkoratest
+ * \test rtkOraTest
  *
  * \author Simon Rit
  *

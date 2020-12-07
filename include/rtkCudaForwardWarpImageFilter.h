@@ -38,7 +38,7 @@ namespace rtk
  * Deform an image using a Displacement Vector Field, by performing
  * trilinear splat. Adjoint of the regular warp filter. GPU-based implementation
  *
- * \test rtkwarptest
+ * \test rtkWarpTest
  *
  * \author Cyril Mory
  *

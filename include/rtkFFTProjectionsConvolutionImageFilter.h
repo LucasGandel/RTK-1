@@ -34,7 +34,7 @@ namespace rtk
  * The filter code is based on FFTConvolutionImageFilter by Gaetan Lehmann
  * (see http://hdl.handle.net/10380/3154).
  *
- * \test rtkrampfiltertest.cxx, rtkscatterglaretest.cxx
+ * \test rtkRampFilterTest.cxx, rtkscatterglaretest.cxx
  *
  * \author Simon Rit
  *

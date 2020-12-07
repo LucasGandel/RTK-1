@@ -21,6 +21,10 @@
 
 #include "rtkDrawGeometricPhantomImageFilter.h"
 
+#ifdef RTK_USE_CUDA
+#  include "itkCudaImage.h"
+#endif
+
 namespace rtk
 {
 
@@ -28,16 +32,16 @@ namespace rtk
  * \brief Draws a SheppLoganPhantom in a 3D image with a default scale of 128.
  *
  * \test rtkRaycastInterpolatorForwardProjectionTest.cxx,
- * rtkprojectgeometricphantomtest.cxx, rtkfdktest.cxx, rtkrampfiltertest.cxx,
- * rtkforwardprojectiontest.cxx, rtkdisplaceddetectortest.cxx,
- * rtkshortscantest.cxx, rtkforbildtest.cxx
+ * rtkProjectGeometricPhantomTest.cxx, rtkfdktest.cxx, rtkRampFilterTest.cxx,
+ * rtkForwardProjectionTest.cxx, rtkdisplaceddetectortest.cxx,
+ * rtkShortScanTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *
  * \ingroup RTK InPlaceImageFilter
  */
 template <class TInputImage, class TOutputImage>
-class ITK_EXPORT DrawSheppLoganFilter : public DrawGeometricPhantomImageFilter<TInputImage, TOutputImage>
+class ITK_TEMPLATE_EXPORT DrawSheppLoganFilter : public DrawGeometricPhantomImageFilter<TInputImage, TOutputImage>
 {
 public:
 #if ITK_VERSION_MAJOR == 5 && ITK_VERSION_MINOR == 1
@@ -72,4 +76,37 @@ protected:
 #  include "rtkDrawSheppLoganFilter.hxx"
 #endif
 
+#endif
+
+
+/** Explicit instantiations */
+#if defined(RTK_USE_CUDA) && !defined(ITK_TEMPLATE_EXPLICIT_DrawSheppLoganFilter)
+// Explicit instantiation is required to avoid multiple definitions
+// across shared libraries.
+//
+// IMPORTANT: Since within the same compilation unit,
+//            ITK_TEMPLATE_EXPLICIT_<classname> defined and undefined states
+//            need to be considered. This code *MUST* be *OUTSIDE* the header
+//            guards.
+//
+#if defined(RTK_EXPORTS)
+//   We are building this library
+#  define RTK_EXPORT_EXPLICIT ITK_TEMPLATE_EXPORT
+#else
+//   We are using this library
+#  define RTK_EXPORT_EXPLICIT RTK_EXPORT
+#endif
+
+namespace rtk
+{
+
+ITK_GCC_PRAGMA_DIAG_PUSH()
+ITK_GCC_PRAGMA_DIAG(ignored "-Wattributes")
+
+extern template class RTK_EXPORT_EXPLICIT DrawSheppLoganFilter<itk::CudaImage<float, 3>, itk::CudaImage<float, 3>>;
+
+ITK_GCC_PRAGMA_DIAG_POP()
+
+} // end namespace rtk
+#undef RTK_EXPORT_EXPLICIT
 #endif

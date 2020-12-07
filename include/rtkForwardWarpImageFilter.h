@@ -32,7 +32,7 @@ namespace rtk
  * Deforms an image using a Displacement Vector Field. Adjoint operator
  * of the itkWarpImageFilter
  *
- * \test rtkfourdroostertest
+ * \test rtkFourDRoosterTest
  *
  * \author Cyril Mory
  *

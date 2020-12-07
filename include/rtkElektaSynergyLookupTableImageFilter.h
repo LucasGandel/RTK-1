@@ -32,7 +32,7 @@ namespace rtk
  * raw lookup table to the logarithm of the value divided by the maximum
  * numerical value. This could be improved with a calibration of the air value.
  *
- * \test rtkelektatest.cxx
+ * \test rtkElektaTest.cxx
  *
  * \author Simon Rit
  *

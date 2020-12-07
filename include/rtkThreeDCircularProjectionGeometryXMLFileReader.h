@@ -34,8 +34,8 @@ namespace rtk
  *
  * Reads an XML-format file containing geometry for reconstruction
  *
- * \test rtkgeometryfiletest.cxx, rtkvariantest.cxx, rtkxradtest.cxx,
- * rtkdigisenstest.cxx, rtkelektatest.cxx
+ * \test rtkGeometryFileTest.cxx, rtkVarianTest.cxx, rtkXRadTest.cxx,
+ * rtkDigisensTest.cxx, rtkElektaTest.cxx
  *
  * \author Simon Rit
  *

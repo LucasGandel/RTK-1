@@ -34,7 +34,7 @@ namespace rtk
  *
  * \author Simon Rit
  *
- * \test rtkdigisenstest.cxx
+ * \test rtkDigisensTest.cxx
  *
  * \ingroup RTK
  */

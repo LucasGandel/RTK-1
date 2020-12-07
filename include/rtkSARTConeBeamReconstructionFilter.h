@@ -125,7 +125,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtksarttest.cxx
+ * \test rtkSARTTest.cxx
  *
  * \author Simon Rit
  *

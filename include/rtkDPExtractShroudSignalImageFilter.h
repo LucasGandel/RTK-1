@@ -27,7 +27,7 @@ namespace rtk
  * \brief Extract the signal corresponding to the breathing motion
  * (1D) from a shroud image (2D).
  *
- * \test rtkamsterdamshroudtest.cxx
+ * \test rtkAmsterdamShroudTest.cxx
  *
  * \author Vivien Delmon
  *

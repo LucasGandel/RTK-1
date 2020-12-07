@@ -28,9 +28,9 @@ namespace rtk
  * \brief Analytical projection of a SheppLoganPhantom with a 128 (default) scale.
  *
  * \test rtkRaycastInterpolatorForwardProjectionTest.cxx,
- * rtkprojectgeometricphantomtest.cxx, rtkfdktest.cxx, rtkrampfiltertest.cxx,
- * rtkforwardprojectiontest.cxx, rtkdisplaceddetectortest.cxx,
- * rtkshortscantest.cxx
+ * rtkProjectGeometricPhantomTest.cxx, rtkfdktest.cxx, rtkRampFilterTest.cxx,
+ * rtkForwardProjectionTest.cxx, rtkdisplaceddetectortest.cxx,
+ * rtkShortScanTest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

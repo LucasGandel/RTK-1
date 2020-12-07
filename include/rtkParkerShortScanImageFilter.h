@@ -36,7 +36,7 @@ namespace rtk
  * of its size. Otherwise, it does the weighting described in the publication
  * and zero pads the data on the nearest side to the center.
  *
- * \test rtkshortscantest.cxx, rtkshortscancompcudatest.cxx
+ * \test rtkShortScanTest.cxx, rtkShortScanCompCudaTest.cxx
  *
  * \author Simon Rit
  *

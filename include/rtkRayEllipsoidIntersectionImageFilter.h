@@ -32,7 +32,7 @@ namespace rtk
 /** \class RayEllipsoidIntersectionImageFilter
  * \brief Analytical projection of ellipsoids
  *
- * \test rtksarttest.cxx, rtkamsterdamshroudtest.cxx,
+ * \test rtkSARTTest.cxx, rtkAmsterdamShroudTest.cxx,
  *        rtkmotioncompensatedfdktest.cxx, rtkforbildtest.cxx
  *
  * \author Simon Rit

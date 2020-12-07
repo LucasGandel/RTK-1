@@ -30,7 +30,7 @@ namespace rtk
  * \brief Mask out everything behind the jaws (typically in Ora file format,
  * i.e., the medPhoton scanner)
  *
- * \test rtkoratest
+ * \test rtkOraTest
  *
  * \author Simon Rit
  *

@@ -29,7 +29,7 @@ namespace rtk
  *
  * Creates a 3D circular geometry from Varian ProBeam data.
  *
- * \test rtkvariantest.cxx
+ * \test rtkVarianTest.cxx
  *
  * \author Simon Rit
  *

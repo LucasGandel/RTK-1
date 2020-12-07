@@ -77,7 +77,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkwarpfourdtoprojectionstacktest.cxx
+ * \test rtkWarpFourDToProjectionStackTest.cxx
  *
  * \author Cyril Mory
  *

@@ -50,7 +50,7 @@ namespace rtk
  * has been placed after the source and the volume. If the detector is in the volume
  * the sum is performed only until that point.
  *
- * \test rtkZengforwardprojectiontest.cxx
+ * \test rtkZengForwardProjectionTest.cxx
  *
  * \author Antoine Robert
  *

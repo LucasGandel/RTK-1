@@ -89,7 +89,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkfourdconjugategradienttest.cxx
+ * \test rtkFourDConjugateGradientTest.cxx
  *
  * \author Cyril Mory
  *

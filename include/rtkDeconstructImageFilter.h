@@ -118,7 +118,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkwaveletstest.cxx
+ * \test rtkWaveletsTest.cxx
  *
  * \author Cyril Mory
  *

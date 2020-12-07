@@ -87,7 +87,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkadmmWaveletstest.cxx
+ * \test rtkADMMWaveletsTest.cxx
  *
  * \author Cyril Mory
  *

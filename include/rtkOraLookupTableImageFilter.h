@@ -32,7 +32,7 @@ namespace rtk
  * create a linear lookup table. The log is taken depending on the flag
  * ComputeLineIntegral.
  *
- * \test rtkoratest.cxx
+ * \test rtkOraTest.cxx
  *
  * \author Simon Rit
  *

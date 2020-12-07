@@ -22,6 +22,11 @@
 #include "rtkConfiguration.h"
 #include "rtkMacro.h"
 
+#ifdef RTK_USE_CUDA
+  #include "itkCudaImage.h"
+  #include "RTKExport.h"
+#endif
+
 #include <itkImageSource.h>
 #include <itkNumericTraits.h>
 #include <itkVariableLengthVector.h>
@@ -37,18 +42,18 @@ namespace rtk
  * tomography reconstructed with a filtered backprojection algorithm.
  *
  * \test rtkRaycastInterpolatorForwardProjectionTest.cxx,
- * rtkprojectgeometricphantomtest.cxx, rtkfdktest.cxx, rtksarttest.cxx,
- * rtkrampfiltertest.cxx, rtkamsterdamshroudtest.cxx,
- * rtkdrawgeometricphantomtest.cxx, rtkmotioncompensatedfdktest.cxx,
- * rtkfovtest.cxx, rtkforwardprojectiontest.cxx, rtkdisplaceddetectortest.cxx,
- * rtkshortscantest.cxx
+ * rtkProjectGeometricPhantomTest.cxx, rtkfdktest.cxx, rtkSARTTest.cxx,
+ * rtkRampFilterTest.cxx, rtkAmsterdamShroudTest.cxx,
+ * rtkDrawGeometricPhantomTest.cxx, rtkmotioncompensatedfdktest.cxx,
+ * rtkFOVTest.cxx, rtkForwardProjectionTest.cxx, rtkdisplaceddetectortest.cxx,
+ * rtkShortScanTest.cxx
  *
  * \author Simon Rit
  *
  * \ingroup RTK ImageSource
  */
 template <typename TOutputImage>
-class ITK_EXPORT ConstantImageSource : public itk::ImageSource<TOutputImage>
+class ITK_TEMPLATE_EXPORT ConstantImageSource : public itk::ImageSource<TOutputImage>
 {
 public:
 #if ITK_VERSION_MAJOR == 5 && ITK_VERSION_MINOR == 1
@@ -150,4 +155,38 @@ protected:
 #  include "rtkConstantImageSource.hxx"
 #endif
 
+#endif
+
+/** Explicit instantiations */
+#if defined(RTK_USE_CUDA) && !defined(ITK_TEMPLATE_EXPLICIT_ConstantImageSource)
+// Explicit instantiation is required to avoid multiple definitions
+// across shared libraries.
+//
+// IMPORTANT: Since within the same compilation unit,
+//            ITK_TEMPLATE_EXPLICIT_<classname> defined and undefined states
+//            need to be considered. This code *MUST* be *OUTSIDE* the header
+//            guards.
+//
+#if defined(RTK_EXPORTS)
+//   We are building this library
+#  define RTK_EXPORT_EXPLICIT ITK_TEMPLATE_EXPORT
+#else
+//   We are using this library
+#  define RTK_EXPORT_EXPLICIT RTK_EXPORT
+#endif
+
+namespace rtk
+{
+
+ITK_GCC_PRAGMA_DIAG_PUSH()
+ITK_GCC_PRAGMA_DIAG(ignored "-Wattributes")
+
+extern template class RTK_EXPORT_EXPLICIT ConstantImageSource<itk::CudaImage<float, 3>>;
+extern template class RTK_EXPORT_EXPLICIT ConstantImageSource<itk::CudaImage<float, 4>>;
+extern template class RTK_EXPORT_EXPLICIT ConstantImageSource<itk::CudaImage<itk::CovariantVector<float, 3>, 3>>; // needed for itk::CudaImage<itk::CovariantVector<float, 3>, 3> in rtkADMMTotalVariationTest
+
+ITK_GCC_PRAGMA_DIAG_POP()
+
+} // end namespace rtk
+#undef RTK_EXPORT_EXPLICIT
 #endif

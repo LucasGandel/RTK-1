@@ -107,7 +107,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkconjugategradienttest.cxx
+ * \test rtkConjugateGradientTest.cxx
  *
  * \author Cyril Mory
  *

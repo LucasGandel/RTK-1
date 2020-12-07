@@ -28,7 +28,7 @@ namespace rtk
 /** \class RayQuadricIntersectionImageFilter
  * \brief Analytical projection of a QuadricShape
  *
- * \test rtkdrawgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkDrawGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

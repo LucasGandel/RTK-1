@@ -39,7 +39,7 @@ namespace rtk
  *
  * \see rtk::FFTProjectionsConvolutionImageFilter
  *
- * \test rtkrampfiltertest.cxx, rtkrampfiltertest2.cxx
+ * \test rtkRampFilterTest.cxx, rtkRampFilterTest2.cxx
  *
  * \author Simon Rit
  *

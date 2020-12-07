@@ -23,6 +23,12 @@
 #include <itkStatisticsImageFilter.h>
 #include <itkTimeProbe.h>
 
+#ifdef RTK_USE_CUDA
+#  include "itkCudaImage.h"
+#include "RTKExport.h"
+
+#endif
+
 #include "rtkSumOfSquaresImageFilter.h"
 
 #include "rtkConjugateGradientGetR_kPlusOneImageFilter.h"
@@ -43,7 +49,7 @@ namespace rtk
  */
 
 template <typename OutputImageType>
-class ConjugateGradientImageFilter : public itk::InPlaceImageFilter<OutputImageType, OutputImageType>
+class ITK_TEMPLATE_EXPORT ConjugateGradientImageFilter : public itk::InPlaceImageFilter<OutputImageType, OutputImageType>
 {
 public:
 #if ITK_VERSION_MAJOR == 5 && ITK_VERSION_MINOR == 1
@@ -128,4 +134,37 @@ protected:
 #  include "rtkConjugateGradientImageFilter.hxx"
 #endif
 
+#endif
+
+
+/** Explicit instantiations */
+#if defined(RTK_USE_CUDA) && !defined(ITK_TEMPLATE_EXPLICIT_ConjugateGradientImageFilter)
+// Explicit instantiation is required to avoid multiple definitions
+// across shared libraries.
+//
+// IMPORTANT: Since within the same compilation unit,
+//            ITK_TEMPLATE_EXPLICIT_<classname> defined and undefined states
+//            need to be considered. This code *MUST* be *OUTSIDE* the header
+//            guards.
+//
+#if defined(RTK_EXPORTS)
+//   We are building this library
+#  define RTK_EXPORT_EXPLICIT ITK_TEMPLATE_EXPORT
+#else
+//   We are using this library
+#  define RTK_EXPORT_EXPLICIT RTK_EXPORT
+#endif
+
+namespace rtk
+{
+
+  ITK_GCC_PRAGMA_DIAG_PUSH()
+    ITK_GCC_PRAGMA_DIAG(ignored "-Wattributes")
+
+    extern template class RTK_EXPORT_EXPLICIT ConjugateGradientImageFilter<itk::CudaImage<float, 3>>;
+
+  ITK_GCC_PRAGMA_DIAG_POP()
+
+} // end namespace rtk
+#undef RTK_EXPORT_EXPLICIT
 #endif

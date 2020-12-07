@@ -52,8 +52,8 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkfdktest.cxx, rtkrampfiltertest.cxx, rtkmotioncompensatedfdktest.cxx,
- * rtkdisplaceddetectortest.cxx, rtkshortscantest.cxx
+ * \test rtkfdktest.cxx, rtkRampFilterTest.cxx, rtkmotioncompensatedfdktest.cxx,
+ * rtkdisplaceddetectortest.cxx, rtkShortScanTest.cxx
  *
  * \author Simon Rit
  *

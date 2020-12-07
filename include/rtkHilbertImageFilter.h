@@ -33,7 +33,7 @@ namespace rtk
  * [Oppenheim and Schafer, Discrete-Time signal processing, 1998]
  * [Marple, IEEE Trans Sig Proc, 1999]
  *
- * \test rtkamsterdamshroudtest
+ * \test rtkAmsterdamShroudTest
  *
  * \author Simon Rit
  *

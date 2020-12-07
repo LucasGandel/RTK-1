@@ -31,7 +31,7 @@ namespace rtk
  *
  * Creates a 3D circular geometry from the IBA data set.
  *
- * \test rtkimagxtest.cxx
+ * \test rtkImagXTest.cxx
  *
  * \author Marc Vila, C. Mory, S. Brousmiche (IBA)
  *

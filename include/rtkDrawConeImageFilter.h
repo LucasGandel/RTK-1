@@ -28,7 +28,7 @@ namespace rtk
 /** \class DrawConeImageFilter
  * \brief Draws a cone in a 3D image.
  *
- * \test rtkdrawgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkDrawGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

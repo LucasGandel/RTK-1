@@ -31,7 +31,7 @@ namespace rtk
  * method, developped by Nguyen and Brown. Their method is computationally demanding, but its
  * restriction to 1D can be implemented efficiently. This is what this filter does.
  *
- * \test rtkl0gradientnormtest
+ * \test rtkL0GradientNormTest
  *
  * \author Cyril Mory
  *

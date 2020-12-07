@@ -40,7 +40,7 @@ namespace rtk
  * [Feldkamp, Davis, Kress, 1984] algorithm for filtered backprojection
  * reconstruction of cone-beam CT images with a circular source trajectory.
  *
- * \test rtksarttest.cxx
+ * \test rtkSARTTest.cxx
  *
  * \author Simon Rit
  *

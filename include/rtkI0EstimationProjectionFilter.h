@@ -35,7 +35,7 @@ namespace rtk
  *
  * \author Sebastien Brousmiche
  *
- * \test rtkI0estimationtest.cxx
+ * \test rtkI0EstimationTest.cxx
  *
  * \ingroup RTK InPlaceImageFilter
  */

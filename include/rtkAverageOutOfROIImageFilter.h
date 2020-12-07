@@ -40,7 +40,7 @@ namespace rtk
  * order to average along time between phases, everywhere except where
  * movement is expected to occur.
  *
- * \test rtkfourdroostertest.cxx
+ * \test rtkFourDRoosterTest.cxx
  *
  * \author Cyril Mory
  *

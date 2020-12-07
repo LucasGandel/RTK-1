@@ -56,7 +56,7 @@ namespace rtk
  * SplatWithKnownWeightsImageFilter implements S_theta^T.
  *
  *
- * \test rtkfourdconjugategradienttest.cxx
+ * \test rtkFourDConjugateGradientTest.cxx
  *
  * \author Cyril Mory
  *

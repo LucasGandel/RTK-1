@@ -31,6 +31,7 @@ set(RTK_SRCS
   rtkOraImageIO.cxx
   rtkOraImageIOFactory.cxx
   rtkOraXMLFileReader.cxx
+  rtkPhasesToInterpolationWeights.cxx
   rtkQuadricShape.cxx
   rtkReg23ProjectionGeometry.cxx
   rtkSheppLoganPhantom.cxx
@@ -102,6 +103,9 @@ if (RTK_USE_CUDA)
   CUDA_COMPILE(RTK_CUDA_WRAPPERS ${RTK_CUDA_FILES})
 
   set(RTK_SRCS ${RTK_SRCS}
+    rtkBackProjectionImageFilter.cxx
+    rtkConjugateGradientImageFilter.cxx
+    rtkConstantImageSource.cxx
     rtkCudaAverageOutOfROIImageFilter.cxx
     rtkCudaConstantVolumeSeriesSource.cxx
     rtkCudaConstantVolumeSource.cxx
@@ -125,6 +129,13 @@ if (RTK_USE_CUDA)
     rtkCudaWarpBackProjectionImageFilter.cxx
     rtkCudaWarpForwardProjectionImageFilter.cxx
     rtkCudaWarpImageFilter.cxx
+    rtkCyclicDeformationImageFilter.cxx
+    rtkDisplacedDetectorImageFilter.cxx
+    rtkDrawSheppLoganFilter.cxx
+    rtkFDKWeightProjectionFilter.cxx
+    rtkForwardProjectionImageFilter.cxx
+    rtkInterpolatorWithKnownWeightsImageFilter.cxx
+    rtkLagCorrectionImageFilter.cxx
     ${RTK_CUDA_WRAPPERS}
     ${RTK_CUDA_FILES})
 endif()

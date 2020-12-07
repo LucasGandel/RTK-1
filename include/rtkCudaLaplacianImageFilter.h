@@ -24,7 +24,7 @@
 #ifdef RTK_USE_CUDA
 
 #  include "rtkLaplacianImageFilter.h"
-#  include <itkCudaInPlaceImageFilter.h>
+#  include <itkCudaImageToImageFilter.h>
 #  include "RTKExport.h"
 
 namespace rtk

@@ -97,7 +97,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkiterativefdktest.cxx
+ * \test rtkIterativeFDKTest.cxx
  *
  * \author Simon Rit
  *

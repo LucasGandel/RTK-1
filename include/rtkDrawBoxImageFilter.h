@@ -29,7 +29,7 @@ namespace rtk
 /** \class DrawBoxImageFilter
  * \brief Draws a 3D image user defined BoxShape.
  *
- * \test rtkdrawgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkDrawGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

@@ -29,7 +29,7 @@ namespace rtk
  * nearest to the phase parameter. The phase signal is assumed to be between
  * 0 and 1 and monotonic.
  *
- * \test rtkselectoneprojpercycletest.cxx
+ * \test rtkSelectOneProjPerCycleTest.cxx
  *
  * \author Simon Rit
  *

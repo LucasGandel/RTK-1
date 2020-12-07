@@ -99,7 +99,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkconjugategradientreconstructiontest.cxx
+ * \test rtkConjugateGradientReconstructionTest.cxx
  *
  * \author Cyril Mory
  *

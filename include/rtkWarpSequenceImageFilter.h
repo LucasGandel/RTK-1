@@ -79,7 +79,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkfourdroostertest.cxx
+ * \test rtkFourDRoosterTest.cxx
  *
  * \author Cyril Mory
  *

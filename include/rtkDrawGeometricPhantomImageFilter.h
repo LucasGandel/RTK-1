@@ -29,7 +29,7 @@ namespace rtk
 /** \class DrawGeometricPhantomImageFilter
  * \brief Draws a GeometricPhantom in a 3D image
  *
- * \test rtkprojectgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkProjectGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

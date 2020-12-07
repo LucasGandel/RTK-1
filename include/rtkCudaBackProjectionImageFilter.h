@@ -39,7 +39,7 @@ namespace rtk
  * [Feldkamp, Davis, Kress, 1984] algorithm for filtered backprojection
  * reconstruction of cone-beam CT images with a circular source trajectory.
  *
- * \test rtksarttest.cxx
+ * \test rtkSARTTest.cxx
  *
  * \author Simon Rit
  *
@@ -47,7 +47,7 @@ namespace rtk
  */
 
 template <class ImageType = itk::CudaImage<float, 3>>
-class ITK_EXPORT CudaBackProjectionImageFilter
+class ITK_TEMPLATE_EXPORT CudaBackProjectionImageFilter
   : public itk::CudaInPlaceImageFilter<ImageType, ImageType, BackProjectionImageFilter<ImageType, ImageType>>
 {
 public:

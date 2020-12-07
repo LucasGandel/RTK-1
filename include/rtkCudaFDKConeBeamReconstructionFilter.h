@@ -40,7 +40,7 @@ namespace rtk
  * Also take care to create the reconstructed volume on the GPU at the beginning and
  * transfers it at the end.
  *
- * \test rtkfdktest.cxx, rtkrampfiltertest.cxx
+ * \test rtkfdktest.cxx, rtkRampFilterTest.cxx
  *
  * \author Simon Rit
  *

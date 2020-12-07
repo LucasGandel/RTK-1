@@ -50,7 +50,7 @@ namespace rtk
  * The filter code is based on FFTProjectionsConvolutionImageFilter by Gaetan Lehmann
  * (see http://hdl.handle.net/10380/3154)
  *
- * \test rtkrampfiltertest.cxx
+ * \test rtkRampFilterTest.cxx
  *
  * \author Simon Rit
  *

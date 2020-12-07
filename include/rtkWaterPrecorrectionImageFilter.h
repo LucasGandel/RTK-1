@@ -29,7 +29,7 @@ namespace rtk
 /** \class WaterPrecorrectionImageFilter
  * \brief Performs the classical water precorrection for beam hardening (Kachelriess, Med. Phys. 2006)
  *
- * \test rtkwaterprecorrectiontest.cxx
+ * \test rtkWaterPreCorrectionTest.cxx
  *
  * \author S. Brousmiche
  *

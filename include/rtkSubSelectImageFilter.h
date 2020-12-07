@@ -54,7 +54,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkadmmtotalvariationtest.cxx, rtkselectoneprojpercycletest.cxx
+ * \test rtkADMMTotalVariationTest.cxx, rtkSelectOneProjPerCycleTest.cxx
  *
  * \author Simon Rit
  *

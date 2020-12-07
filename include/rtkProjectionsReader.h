@@ -114,8 +114,8 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkedftest.cxx, rtkelektatest.cxx, rtkimagxtest.cxx,
- * rtkdigisenstest.cxx, rtkxradtest.cxx, rtkvariantest.cxx
+ * \test rtkEdfTest.cxx, rtkElektaTest.cxx, rtkImagXTest.cxx,
+ * rtkDigisensTest.cxx, rtkXRadTest.cxx, rtkVarianTest.cxx
  *
  * \author Simon Rit
  *

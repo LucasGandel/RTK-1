@@ -38,7 +38,7 @@ namespace rtk
  * GPU-based implementation of the voxel-based backprojection, assuming
  * a deformation of the volume.
  *
- * \test rtksarttest.cxx
+ * \test rtkSARTTest.cxx
  *
  * \author Cyril Mory
  *

@@ -29,7 +29,7 @@ namespace rtk
 /** \class RayBoxIntersectionImageFilter
  * \brief Analytical projection of a BoxShape.
  *
- * \test rtkdrawgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkDrawGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

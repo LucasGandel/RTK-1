@@ -34,7 +34,7 @@ namespace rtk
  *
  * Uses CUFFT for the projection fft and ifft.
  *
- * \test rtkscatterglarefiltertest.cxx
+ * \test rtkScatterGlareFilterTest.cxx
  *
  * \author Simon Rit
  *

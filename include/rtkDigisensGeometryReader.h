@@ -31,7 +31,7 @@ namespace rtk
  * Creates a 3D circular geometry from an xml file created by the calibration
  * software developed by the Digisens company.
  *
- * \test rtkdigisenstest.cxx
+ * \test rtkDigisensTest.cxx
  *
  * \author Simon Rit
  *

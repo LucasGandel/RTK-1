@@ -112,7 +112,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkfourdsarttest.cxx
+ * \test rtkFourDSARTTest.cxx
  *
  * \author Cyril Mory
  *

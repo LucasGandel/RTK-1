@@ -32,7 +32,7 @@ namespace rtk
  * QuadricShape::SetEllipsoid and then with the cylinder direction defined by
  * one 0 component in the axis vector.
  *
- * \test rtkdrawgeometricphantomtest.cxx, rtkforbildtest.cxx
+ * \test rtkDrawGeometricPhantomTest.cxx, rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit
  *

@@ -36,7 +36,7 @@ namespace rtk
  * There are several parameters to the extraction that should be at least
  * adjusted for every system and possibly for some patients.
  *
- * \test rtkamsterdamshroudtest.cxx
+ * \test rtkAmsterdamShroudTest.cxx
  *
  * \author Simon Rit
  *

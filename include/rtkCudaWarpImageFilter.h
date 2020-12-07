@@ -37,7 +37,7 @@ namespace rtk
  *
  * Deform an image using a Displacement Vector Field. GPU-based implementation
  *
- * \test rtkwarptest
+ * \test rtkWarpTest
  *
  * \author Cyril Mory
  *

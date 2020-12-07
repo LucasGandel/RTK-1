@@ -108,7 +108,7 @@ namespace rtk
  *  }
  * \enddot
  *
- * \test rtkosemtest.cxx
+ * \test rtkOSEMTest.cxx
  *
  * \author Antoine Robert
  *

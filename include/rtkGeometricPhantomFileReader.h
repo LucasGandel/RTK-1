@@ -28,7 +28,7 @@ namespace rtk
 /** \class GeometricPhantomFileReader
  * \brief Reads configuration file in a user-defined file format
  *
- * \test rtkprojectgeometricphantomtest.cxx, rtkdrawgeometricphantomtest.cxx,
+ * \test rtkProjectGeometricPhantomTest.cxx, rtkDrawGeometricPhantomTest.cxx,
  *       rtkforbildtest.cxx
  *
  * \author Marc Vila, Simon Rit

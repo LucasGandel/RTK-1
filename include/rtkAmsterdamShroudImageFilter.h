@@ -71,7 +71,7 @@ namespace rtk
  * }
  * \enddot
  *
- * \test rtkamsterdamshroudtest.cxx
+ * \test rtkAmsterdamShroudTest.cxx
  *
  * \author Simon Rit
  *
